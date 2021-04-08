@@ -42,7 +42,7 @@ export default function Usage() {
               style={[styles.card]}
               colors={[COLORS.grey, COLORS.background, COLORS.background]}
               start={{x: 0, y: 1}}
-              locations={[0.1, 0.9, 0.9]}>
+              locations={[0.11, 0.9, 0.9]}>
               <Icon />
               <Text style={styles.bodyTitle}>{title}</Text>
               <Text style={styles.bodyDiscription} numberOfLines={1}>
