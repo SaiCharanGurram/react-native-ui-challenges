@@ -62,7 +62,7 @@ function Card({inBackground = false}) {
     <LinearGradient
       colors={colors}
       start={{x: 0, y: 0}}
-      locations={[0.1, 0.9]}
+      locations={inBackground ? [0.5, 0.9] : [0.1, 0.9]}
       end={{x: 1, y: 1}}
       style={styles.container}>
       <SimCard

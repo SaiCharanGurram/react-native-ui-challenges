@@ -4,15 +4,22 @@ import Suitcase from './../assets/icons/Suitcase';
 import Paypal from './../assets/icons/Paypal';
 import {LinearGradient} from 'expo-linear-gradient';
 import {COLORS} from '../styles/theme';
+
+const iconProps = {
+  width: 32,
+  height: 32,
+  fill: COLORS.white,
+};
+
 const CARDS = [
   {
-    Icon: () => <Suitcase fill="#fff" width={32} height={32} />,
+    Icon: () => <Suitcase {...iconProps} />,
     title: 'Salary',
     desciption: 'Being interactive',
     transaction: '+$20000',
   },
   {
-    Icon: () => <Paypal fill="#fff" width={32} height={32} />,
+    Icon: () => <Paypal {...iconProps} />,
     title: 'Paypal',
     desciption: 'Freelance payment',
     transaction: '+$4500',
@@ -42,7 +49,7 @@ export default function Usage() {
               style={[styles.card]}
               colors={[COLORS.grey, COLORS.background, COLORS.background]}
               start={{x: 0, y: 1}}
-              locations={[0.11, 0.9, 0.9]}>
+              locations={[0.1, 0.5, 0.9]}>
               <Icon />
               <Text style={styles.bodyTitle}>{title}</Text>
               <Text style={styles.bodyDiscription} numberOfLines={1}>
